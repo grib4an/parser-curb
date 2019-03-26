@@ -43,7 +43,7 @@ def parsing(url,wr)
 
 
 
-    puts "Url изображения: "+UrlImg
+    puts "Url изображения: "+urlImg
 
   end
 
