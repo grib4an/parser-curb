@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f52c5f8f-8281-41cb-99e1-b7f0f0fdada5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/main.rb" afterDir="false" />
-    </list>
+    <list default="true" id="f52c5f8f-8281-41cb-99e1-b7f0f0fdada5" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            <state relative-caret-position="277">
+              <caret line="70" column="28" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -155,16 +152,15 @@
       <workItem from="1553436486371" duration="4015000" />
       <workItem from="1553445079655" duration="16941000" />
       <workItem from="1553500447235" duration="8334000" />
-      <workItem from="1553591436963" duration="12110000" />
+      <workItem from="1553591436963" duration="12542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45183000" />
+    <option name="totallyTimeSpent" value="45615000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14138818" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -283,8 +279,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        <state relative-caret-position="277">
+          <caret line="70" column="28" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="28" />
         </state>
       </provider>
     </entry>
