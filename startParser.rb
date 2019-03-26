@@ -43,7 +43,7 @@ answer=[]
 
 
 
-    puts "Url изображения: "+UrlImg
+    puts "Url изображения: "+urlImg
 
     end
 
