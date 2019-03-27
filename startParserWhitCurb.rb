@@ -2,10 +2,12 @@ require 'curb'
 require 'nokogiri'
 require 'csv'
 
+
 def parsing(url,wr)
 
   html=Curl.get(url)
   doc=Nokogiri::HTML(html.body_str)
+
 
   names=[]
   answer=[]
@@ -34,16 +36,18 @@ def parsing(url,wr)
     puts "Виды цен :"
     docOne.xpath('//span[@class="price_comb"]').each do |row1|
       puts " - "+row1.text.strip()
+
       answer[0]=names[i]
       answer[1]=row1.text.strip()
       answer[2]=urlImg
       wr<<answer
+
       i+=1
     end
 
 
 
-    puts "Url изображения: "+UrlImg
+    puts "Url изображения: "+urlImg
 
   end
 
@@ -52,25 +56,33 @@ end
 
 
 
+
+
 puts "enter url:"
 url=gets.chomp().strip
 
 puts "enter file"
-file=gets.chomp()
+file=gets.chomp().strip
+
+threads=[]
 
 if(url=="https://www.petsonic.com/snacks-huesos-para-perros/")
-  CSV.open("#{file.strip()}.csv","wb") do |wr|
-    begin
-      i=1
-      while i>0
+  CSV.open("#{file}.csv","wb") do |wr|
+
+
+    for i in 1..9
+      threads<<Thread.new(i) do |i|
         puts "страница №#{i}\n#####################"
         parsing(url+"?p=#{i}",wr)
-        i+=1
       end
-    rescue
-      puts "PARSING FINISHED"
     end
+
+    threads.each(&:join)
   end
+
+  puts "         ##########################\n
+              PARSING FINISHED"
+
 else
-  puts"Не верно введен url!"
+  puts"Ошибка!\nЯ могу парсит только этот url: https://www.petsonic.com/snacks-huesos-para-perros/"
 end
